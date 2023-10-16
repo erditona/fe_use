@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>IoT Dashboard</title>
+  </head>
+  <body class="bg-gray-200 p-8">
+    <div class="max-w-md mx-auto bg-white p-4 rounded-lg shadow-md">
+      <h1 class="text-2xl font-semibold mb-4">IoT Dashboard</h1>
+
+      <button id="addCardButton" class="bg-blue-500 text-white px-4 py-2 rounded-md mb-4">Tambah Card</button>
+
+      <div id="cardsContainer"></div>
+    </div>
+
+    <!-- Include SweetAlert2 library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
