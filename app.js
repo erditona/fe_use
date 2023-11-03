@@ -1,15 +1,15 @@
 // app.js
 const cardsContainer = document.getElementById("cardsContainer");
 const addCardButton = document.getElementById("addCardButton");
-const client = mqtt.connect("ws://localhost:1882", {
+const client = mqtt.connect("ws://broker.emqx.io", {
   clientId: "javascript",
 });
 
 // Code for MQTT connections and message handling
 client.on("connect", function () {
-  console.log("connected!");
-  // client.subscribe("koalawan/iot/temperature");
-  // client.subscribe("koalawan/iot/humidity");
+  console.log("Tersambung ke broker!");
+  client.subscribe("koalawan/iot/temperature");
+  client.subscribe("koalawan/iot/humidity");
 });
 
 // Function to add a card with topic and name
