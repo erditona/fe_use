@@ -1,7 +1,7 @@
 // app.js
 const cardsContainer = document.getElementById("cardsContainer");
 const addCardButton = document.getElementById("addCardButton");
-const client = mqtt.connect("ws://broker.emqx.io", {
+const client = mqtt.connect("ws://broker.emqx.io:8083/mqtt", {
   clientId: "javascript",
 });
 
